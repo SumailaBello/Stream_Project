@@ -1,0 +1,224 @@
+html {
+    font-family: sans-serif;
+}
+
+body {
+    margin-left: 50px;
+    margin-right: 50px;
+    background-image: url(../img/musicfull.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+header {
+    background-color: black;
+   
+}
+/*the below sets all div in header to display inline*/
+header div {
+    display: inline-block;
+    
+}
+
+/*
+header .sitenav, header .sitename {
+    padding-left: 20%
+}
+*/
+
+
+header h1 {
+    color: white;
+    font-style: italic;
+    text-shadow: 15px;
+}
+
+/*selects the div containing the site name in header using a class selector */
+header .sitename{
+    margin-left: 15%;
+    margin-right: 40%;
+}
+
+/*the below selects the site tagline and sets specific properties*/
+header em {
+    font-size: 15px;
+    font-weight: 3;
+    color: white;
+}
+/*selects the nav links*/
+nav a {
+    text-decoration: none;
+    font-size: 20px;
+/*the below padding left/right enables equal spacing and also makes the background hover color equal*/
+    padding-left: 20px;
+    padding-right: 20px;
+    float: right;
+}
+
+a:link{
+    color: white;
+}
+
+a:visited{
+    color: white;
+}
+
+a:hover{
+    background-color: dimgray;
+}
+
+a:active{
+    color: black;
+}
+
+/*sets the width of all sections*/
+section{
+    width: 100%;
+}
+
+.section_1{
+    margin-top: 10px;
+}
+/*selects the "MUSIC PLAYER" heading h2*/
+section h2{
+    margin-right: 30%;
+    margin-left: 40%;
+    
+    padding-top: 1%;
+}
+
+/*selects the form title heading*/
+form h4{
+    color: white;
+    margin-bottom: 3px;
+}
+
+/*selects the musicplayer headings sections using a class selector and sets background and text color*/
+.section_1, .section_2, .section_3, .section_4{
+    background-color: black;
+    color: white;
+    height: 33%;
+}
+
+.section_2, .section_3, .section_4{
+    margin-top: 70px;
+}
+
+
+/*selects the h3 headings including artists, albums, all songs and sets margin properties*/
+section h3 {
+    margin-top: 5%;
+    margin-right: 30%;
+    margin-left: 42%;
+    padding-top: 2%;
+}
+ 
+/*selects all links in different sections*/
+section a {
+    text-decoration: none;
+    background-color: black
+}
+
+
+
+
+/*selects and styles the email us section*/
+article {
+    background-color: black;
+    margin-top: 5%;
+    color: white;
+}
+/*styles the about section paragraph*/
+article p{
+    padding: 0 20%;
+    padding-top: 1%;
+}
+
+/*footer settings*/
+footer {
+    background-color: black;
+    margin-top: 10% ;
+    height: 3%;
+}
+
+footer p {
+    color: white;
+    margin: 0 40%;
+}
+/*seprates social media icons*/
+footer p img {
+    margin-left: 5px;
+    border-radius: 100%;
+}
+
+/*overwrites the initial background color property for hover*/
+footer a:hover {
+    background-color: black;
+}
+/*media queries*/
+
+/*this media query ensures proper scaling on medium sized screens*/
+
+@media(max-width:1020px) {
+    
+header .sitename{
+    margin-left: 15%;
+    margin-right: 23%;
+}
+
+
+}
+
+/*this media query fixes scaling issue of the nav bar and sitename on smaller screens and also the background pics*/
+@media(max-width:768px) {
+    
+    body{
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+header .sitename{
+
+    margin: 0 15px;
+    padding-left: 1.5%;
+}
+
+header .sitenav {
+    margin:0 auto;
+}
+    
+nav a {
+    text-decoration: none;
+    font-size: 20px;
+}
+    nav{
+        margin-left: 60px;
+    }
+/*selects the "MUSIC PLAYER" heading h2*/
+section h2{
+    margin-left: 30%;
+    padding-top: 1%;
+}    
+/*selects the h3 headings including artists, albums, all songs and sets margin properties*/
+section h3 {
+    margin-top: 5%;
+    margin-right: 30%;
+    margin-left: 35%;
+    padding-top: 2%;
+}
+/*    selects the email us paragraph and sets new padding values */
+    article p{
+        padding: 0;
+        padding-left: 5px;
+    }
+/*  sets new paragraph values for footer */
+    footer p{
+        margin-left: 15%;
+        margin-right:0 ;
+    }
+    
+    
+    
+    
+}
+

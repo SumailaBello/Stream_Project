@@ -1,0 +1,37 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
+        "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+   <meta name="viewport" content="width=768px">
+    <title></title>
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="stylesheet" type="text/css" href="css/now_playing.css">
+    <script type="text/javascript" src="js/jquery-1.6.1.min.js"></script>
+    <script type="text/javascript" src="jquery-jplayer/jquery.jplayer.js"></script>
+    <script type="text/javascript" src="js/ttw-music-player-min.js"></script>
+    <script type="text/javascript" src="js/myplaylist.js"></script>
+    <script type="text/javascript">
+        $(document).ready(function(){
+            var description = 'HTML5 audio player powered by JQuery. This screen shows and plays all available songs. ';
+
+            $('body').ttwMusicPlayer(myPlaylist, {
+                autoPlay:false, 
+                description:description,
+                jPlayer:{
+                    swfPath:'jquery-jplayer' //You need to override the default swf path any time the directory structure changes
+                }
+            });
+        });
+    </script>
+</head>
+<body>
+
+<div id="title"></div>
+    <div class="p"><a href="index.html"><h2>ZeeStreamz 2018</h2></a>
+    <h4>Powered by JQuery</h4>
+    <a href="music.html"><button>Go Back</button></a>
+    
+    </div>
+</body>
+
+</html>
