@@ -21,24 +21,24 @@ var myPlaylist = [
     },
     
     {
-        mp3:'songs/1973.mp3',
-        title:'1973',
-        artist:'James Blunt',
+        mp3:'songs/Better.mp3',
+        title:'Better',
+        artist:'Akon',
         rating:0,
 //        buy:'#',
 //        price:'0.99',
-        duration:'04:40',
+        duration:'04:16',
         cover:'mix/1.png'
     }, 
     
     {
-        mp3:'songs/Away.mp3',
-        title:'Away',
-        artist:'P-Square',
+        mp3:'songs/Juice.mp3',
+        title:'Juice',
+        artist:'Ycee',
         rating:0,
 //        buy:'#',
 //        price:'0.99',
-        duration:'04:08',
+        duration:'04:14',
         cover:'mix/1.png'
     }
     
